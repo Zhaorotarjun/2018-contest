@@ -2,7 +2,7 @@ var board = new Array(); //存储游戏的数据
 var added = new Array();
 var score = 0;    //得分
 var top = 240;
-var gNum = 5;
+var gNum = 4;
 var maxScore = 0;
 
 
