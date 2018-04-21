@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>2048</title>
+<link rel="stylesheet" type="text/css" href="main.css" /><link rel="stylesheet" type="text/css" href="reset.css" />
+<script type="text/javascript"
+    src="http://libs.baidu.com/jquery/2.0.0/jquery.js">
+    </script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="support.js"></script>
+<script type="text/javascript" src="show.js"></script>
+<script type="text/javascript" src="main6.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>2048</h1>
+        <button type="button" class="btn btn-danger refreshBtn" onclick="newgame()">开始游戏~</button>
+        <button type="button" class="btn btn-danger refreshBtn add-btn" onclick="window.location.href='开始游戏.html'">换个样式~</button>
+        <p>
+            score:<span id="score">0</span>
+        </p>
+        <div class="maxScore">最高分：
+            <span id="maxScore">0</span>
+        </div>
+    </header>
+    <!--游戏格子-->
+    <div id="grid-container">
+    </div>
+    <!--GAMEOVER部分-->
+    <div class="modal fade" id="gameOverModal" aria-labelledby="myModalLabel" aria-hidden="true"
+         data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                    <h4 class="modal-tittle" id="myModalLabel">2048</h4>
+                </div>
+                <div class="modal-body">
+                    Game Over!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-danger refreshBtn" onclick="newgame()">再玩一次</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
